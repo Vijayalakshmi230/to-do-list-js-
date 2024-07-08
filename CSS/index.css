@@ -1,29 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #0b97fa;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    margin: 0;
 }
-
-.todo-container {
-    padding: 20px;
+.box-1{
+    display: flex;
 }
-
-h1 {
-    margin: 0 0 20px;
-    text-align: center;
-}
-
-input[type="text"] {
-    width: calc(100% - 50px);
+input {
+    width:550px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin-right: 20px;
 }
-
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
 button {
     padding: 10px;
     border: none;
@@ -36,25 +32,25 @@ button {
 button:hover {
     background-color: #4cae4c;
 }
-
-ul {
+ul{
     list-style: none;
-    padding: 0;
 }
-
-li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+.todo {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: center; */
     align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.todo-check, .todo-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-li:last-child {
-    border-bottom: none;
-}
-
-.task-completed {
+.completed {
     text-decoration: line-through;
-    color: gray;
+    color: grey;
 }

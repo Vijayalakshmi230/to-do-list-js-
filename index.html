@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="CSS/index.css">
     <script src="JS/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
     <div class="todo-container">
         <h1>WORK TO-DO'S</h1>
-        <p>Enter the into the input field to add items to your list</p>
-        <p>Click the item to mark it as complete.</p>
-        <p>Click the "X" to remove  the item from your list</p>
-        <input type="text" id="new-task" placeholder="New item....">
-        <button id="add-task-btn">Add</button>
+        <p style="color: yellow;">Enter the into the input field to add items to your list</p>
+        <p style="color: green;">Click the item to mark it as complete.</p>
+        <p style="color: rgb(2, 2, 130);">Click the "X" to remove the item from your list</p>
+        <div class="box-1">
+            <input type="text" name="todo" id="new-task" placeholder="New item....">
+            <button id="add-task-btn">Add</button>
+        </div>
+
         <ul id="task-list"></ul>
     </div>
 </body>
+
 </html>
